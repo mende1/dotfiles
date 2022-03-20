@@ -14,7 +14,7 @@ source $DOTFILES/powerlevel10k/powerlevel10k.zsh-theme
 
 
 # ASDF      ##########################################################
-. $DOTFILES/asdf/asdf.sh
+. $HOME/.asdf/asdf.sh
 
 fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit && compinit
