@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 git --version 2>&1 >/dev/null
 GIT_IS_AVAILABLE=$?
@@ -13,6 +13,8 @@ if [ ! -d "$HOME/.dotfiles" ]; then
     git clone --recurse-submodules https://github.com/mende1/dotfiles.git "$HOME/.dotfiles"
     cd "$HOME/.dotfiles"
     ./install-dotfiles.sh
+    source $HOME/.zshenv
+    source $ZDOTDIR/.zhsrc
 else
     echo "Dotfiles directory already exists. Please remove it, and running this script again."
 fi
