@@ -10,7 +10,7 @@ fi
 
 if [ ! -d "$HOME/.dotfiles" ]; then
     echo "Installing Dotfiles from @mende1"
-    git clone --recurse-submodules https://github.com/mende1/dotfiles.git "$HOME/.dotfiles"
+    git clone --quiet --recurse-submodules https://github.com/mende1/dotfiles.git "$HOME/.dotfiles"
     cd "$HOME/.dotfiles"
     ./install-dotfiles.sh
     source $HOME/.zshenv
