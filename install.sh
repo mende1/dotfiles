@@ -13,6 +13,7 @@ if [ ! -d "$HOME/.dotfiles" ]; then
     git clone --quiet --recurse-submodules https://github.com/mende1/dotfiles.git "$HOME/.dotfiles"
     cd "$HOME/.dotfiles"
     ./install-dotfiles.sh
+    sourcezsh
 else
     echo "Dotfiles directory already exists. Please remove it, and running this script again."
 fi
