@@ -1,8 +1,10 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-echo "entrou"
+
 source ./zsh/zshenv
-echo "saiu"
+
+echo $DOTFILES
+echo $ZDOTDIR
 
 
 . "$DOTFILES/install/install-zsh.sh"
