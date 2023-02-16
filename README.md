@@ -29,7 +29,7 @@ makepkg -si
 yay -S git
 git config --global user.name "Gustavo Mendel"
 git config --global user.email "gustavo.mendel.br@gmail.com"
-git clone https://github.com/mende1/dotfiles /tmp/dotfiles
+git clone git@github.com:mende1/dotfiles.git /tmp/dotfiles
 ```
 
 
@@ -64,7 +64,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
  cp /tmp/dotfiles/Dracula.colorscheme ~/.local/share/konsole
  ```
 
-Now, change the font of Konsole to "FiraCode NF 12pt" and theme for Dracula
+Now, change the font of Konsole to "FiraCode NF 12pt" and theme for Dracula.
+
+Click in Edit Dracula theme, mark the Blur Background option, and set transparency to 4%.
 
 
 
@@ -88,7 +90,6 @@ SPACESHIP_PROMPT_ORDER=(
   hg            # Mercurial section (hg_branch  + hg_status)
   exec_time     # Execution time
   line_sep      # Line break
-  vi_mode       # Vi-mode indicator
   jobs          # Background jobs indicator
   exit_code     # Exit code section
   char          # Prompt character
@@ -122,3 +123,112 @@ zi light zsh-users/zsh-autosuggestions
 zi light zsh-users/zsh-completions
 ```
 
+
+
+### Configuring Konsole
+
+Go to Settings > Tooolbars Show, and mark off `Session Toolbar` and `Main Toolbar`, after that, press `Ctrl + Shift + m` to hide Menubar.
+
+
+
+### Install Lightly Application Style
+
+```bash
+yay -S lightly-git
+```
+
+
+
+### Install RoundedSBE Window Decoration
+
+```bash
+# Dependencies
+yay -S git make cmake gcc gettext extra-cmake-modules qt5-tools kcrash kglobalaccel kde-dev-utils kio knotifications kinit kwin kdecoration qt5-declarative qt5-x11extras
+
+# Installation
+git clone git@github.com:a-parhom/RoundedSBE.git /tmp/RoundedSBE
+cd /tmp/RoundedSBE
+mkdir build && cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DKDE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF -DKDE_INSTALL_USE_QT_SYS_PATHS=ON
+make
+sudo make install
+```
+
+
+
+## Global Theme, Icon theme, and more
+
+### Application Style
+
+Choose **Lightly**. And edit the Lightly theme:
+
+- Mark the first 2 options in General, and change *Corner radius* to 8px.
+- In Transparency tab, change Menu level to 8, starting from 1, and Sidebars to 11, the maximum.
+
+
+
+### Plasma Style
+
+In Plasma Style, search for **WhiteSur Dark**. And switch the current theme to it.
+
+
+
+### Colors
+
+Seach for **Monterey color scheme**, and change to it. Also, mark **Use accent color from current color Scheme** option on top.
+
+
+
+### Window Decorations
+
+Choose **Rounded SBE**. Edit the theme:
+
+- Button Style to ***SBE Sierra Inactive***
+- Button Spacing to 4px
+- Button padding to 5px
+- Horizontal offset to 1px
+- Mark the ***User System Foreground Colors*** option.
+- Gradient Intensity to 25%
+- Background Opacity to 92%
+- In "Window Corners" tab, raise the Corner radius to 12px.
+
+
+
+### Fonts
+
+Change every font, except *Fixed with* to **SF Pro Display**
+
+
+
+### Icons Theme
+
+I like to switch between icon themes often. But the main Icon Themes which I like are:
+
+- WhiteSur-dark
+- Papirus-Dark
+- Reversal-blue-dark
+
+
+
+### Cursors
+
+- WhiteSur Cursors; or
+- Breeze original cursor theme from Plasma.
+
+
+
+### Splash Screen
+
+- Monterey-dark
+
+
+
+### Login Screen
+
+Go to Startup and Shutdown > Login Screen (SDDM), and search for **Monterey** theme. Select it.
+
+
+
+### Wallpaper
+
+Search for **Macos Monterey** and select it in Desktop Wallpaper and Screen Locking > Appearance.
