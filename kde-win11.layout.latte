@@ -24,29 +24,40 @@ viewType=1
 visibility=0
 wallpaperplugin=org.kde.image
 
+[Containments][1][Applets][101]
+immutability=1
+plugin=com.gitlab.cupnoodles14.kickoff
+
+[Containments][1][Applets][101][Configuration]
+PreloadWeight=100
+
+[Containments][1][Applets][101][Configuration][Advanced]
+allowDragResize=false
+horizontalSelectionMargin=1.5
+itemHorizontalMargin=0
+itemVerticalMargin=1.5
+menuHeight=36
+menuWidth=28
+verticalSelectionMargin=0.5
+
+[Containments][1][Applets][101][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][1][Applets][101][Configuration][Favorites]
+favoritesEnableSubtitles=false
+
+[Containments][1][Applets][101][Configuration][General]
+favoritesPortedToKAstats=true
+icon=draw-circle
+
 [Containments][1][Applets][4]
 immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][1][Applets][4][Configuration]
-PreloadWeight=97
+PreloadWeight=89
 SystrayContainmentId=5
-
-[Containments][1][Applets][50]
-immutability=1
-plugin=org.kde.plasma.win7showdesktop
-
-[Containments][1][Applets][50][Configuration]
-PreloadWeight=0
-
-[Containments][1][Applets][50][Configuration][ConfigDialog]
-DialogHeight=600
-DialogWidth=800
-
-[Containments][1][Applets][50][Configuration][General]
-click_action=minimizeall
-click_command=qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Expose"
-size=2
 
 [Containments][1][Applets][54]
 immutability=1
@@ -72,7 +83,7 @@ immutability=1
 plugin=org.kde.plasma.virtualdesktopbar
 
 [Containments][1][Applets][58][Configuration]
-PreloadWeight=92
+PreloadWeight=84
 
 [Containments][1][Applets][58][Configuration][ConfigDialog]
 DialogHeight=995
@@ -117,8 +128,8 @@ v72Migration=true
 widgetShowMeteogram=false
 
 [Containments][1][Applets][60][Configuration][Google Calendar]
-accessToken=ya29.a0AVvZVsobEIBKvmvuOVaHkNPIBUOII6HNYWLn0qyUwcLKfWmzus3V3-HtmrTnKNiahmWSfcUFMCJpBgk2eu1grPumNa-bSR4COMz7x_5HD1NcJ9_BBveusWlvjpd_i7omrc8jW6-WsN_cesVyzTnv2j7GJKstgkplxwaCgYKAc0SAQASFQGbdwaIIX4gHe6TYNw5HzWBnoc4NQ0169
-accessTokenExpiresAt=686677846
+accessToken=ya29.a0AVvZVsr0A5SBOqp9t61v-I9s1xc3QlpcwygWNkz-AjIC2t1unQtd4ENLJiUYYiBC5oF1zRAswK7OYmpFjIoxzzpMZWqYWMnvuMOT-QyIKUcAUxJzuf3ur7l8TAQv-fxcOJstfrJjy2y11C2g1--phlOshgHq-20ZUwaCgYKAQwSAQASFQGbdwaI-hDDWfxAt89oItwaPaXO0A0169
+accessTokenExpiresAt=1555994847
 accessTokenType=Bearer
 calendarIdList=gustavo.mendel.br@gmail.com
 calendarList=W3sia2luZCI6ImNhbGVuZGFyI2NhbGVuZGFyTGlzdEVudHJ5IiwiZXRhZyI6IlwiMTYxNzc1MDM3NzQyNzAwMFwiIiwiaWQiOiJndXN0YXZvLm1lbmRlbC5ickBnbWFpbC5jb20iLCJzdW1tYXJ5IjoiZ3VzdGF2by5tZW5kZWwuYnJAZ21haWwuY29tIiwidGltZVpvbmUiOiJBbWVyaWNhL0JhaGlhIiwiY29sb3JJZCI6IjE0IiwiYmFja2dyb3VuZENvbG9yIjoiIzlmZTFlNyIsImZvcmVncm91bmRDb2xvciI6IiMwMDAwMDAiLCJzZWxlY3RlZCI6dHJ1ZSwiYWNjZXNzUm9sZSI6Im93bmVyIiwiZGVmYXVsdFJlbWluZGVycyI6W3sibWV0aG9kIjoicG9wdXAiLCJtaW51dGVzIjozMH1dLCJub3RpZmljYXRpb25TZXR0aW5ncyI6eyJub3RpZmljYXRpb25zIjpbeyJ0eXBlIjoiZXZlbnRDcmVhdGlvbiIsIm1ldGhvZCI6ImVtYWlsIn0seyJ0eXBlIjoiZXZlbnRDaGFuZ2UiLCJtZXRob2QiOiJlbWFpbCJ9LHsidHlwZSI6ImV2ZW50Q2FuY2VsbGF0aW9uIiwibWV0aG9kIjoiZW1haWwifSx7InR5cGUiOiJldmVudFJlc3BvbnNlIiwibWV0aG9kIjoiZW1haWwifV19LCJwcmltYXJ5Ijp0cnVlLCJjb25mZXJlbmNlUHJvcGVydGllcyI6eyJhbGxvd2VkQ29uZmVyZW5jZVNvbHV0aW9uVHlwZXMiOlsiaGFuZ291dHNNZWV0Il19fSx7ImtpbmQiOiJjYWxlbmRhciNjYWxlbmRhckxpc3RFbnRyeSIsImV0YWciOiJcIjE2MTkxMzgzMTYxMzEwMDBcIiIsImlkIjoiYWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29tIiwic3VtbWFyeSI6IkJpcnRoZGF5cyIsImRlc2NyaXB0aW9uIjoiRGlzcGxheXMgYmlydGhkYXlzLCBhbm5pdmVyc2FyaWVzLCBhbmQgb3RoZXIgZXZlbnQgZGF0ZXMgb2YgcGVvcGxlIGluIEdvb2dsZSBDb250YWN0cy4iLCJ0aW1lWm9uZSI6IkFtZXJpY2EvQmFoaWEiLCJjb2xvcklkIjoiMTMiLCJiYWNrZ3JvdW5kQ29sb3IiOiIjOTJlMWMwIiwiZm9yZWdyb3VuZENvbG9yIjoiIzAwMDAwMCIsInNlbGVjdGVkIjp0cnVlLCJhY2Nlc3NSb2xlIjoicmVhZGVyIiwiZGVmYXVsdFJlbWluZGVycyI6W10sImNvbmZlcmVuY2VQcm9wZXJ0aWVzIjp7ImFsbG93ZWRDb25mZXJlbmNlU29sdXRpb25UeXBlcyI6WyJoYW5nb3V0c01lZXQiXX19LHsia2luZCI6ImNhbGVuZGFyI2NhbGVuZGFyTGlzdEVudHJ5IiwiZXRhZyI6IlwiMTY1NTc0MjE0ODYxMDAwMFwiIiwiaWQiOiJjbGFzc3Jvb20xMDY2NjMxNzI4MjIzNDI3MDg4MDZAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbSIsInN1bW1hcnkiOiIxIC0gT2x5bXB1cyIsInRpbWVab25lIjoiVVRDIiwiY29sb3JJZCI6IjgiLCJiYWNrZ3JvdW5kQ29sb3IiOiIjMTM3MzMzIiwiZm9yZWdyb3VuZENvbG9yIjoiI2ZmZmZmZiIsInNlbGVjdGVkIjp0cnVlLCJhY2Nlc3NSb2xlIjoicmVhZGVyIiwiZGVmYXVsdFJlbWluZGVycyI6W10sImNvbmZlcmVuY2VQcm9wZXJ0aWVzIjp7ImFsbG93ZWRDb25mZXJlbmNlU29sdXRpb25UeXBlcyI6WyJoYW5nb3V0c01lZXQiXX19LHsia2luZCI6ImNhbGVuZGFyI2NhbGVuZGFyTGlzdEVudHJ5IiwiZXRhZyI6IlwiMTY1NzA2MTA1NjI5ODAwMFwiIiwiaWQiOiJjbGFzc3Jvb20xMDQ2MjUyNTQwNTQ1MTA5NjA3MTdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbSIsInN1bW1hcnkiOiIyIC0gTWF0dGVyaG9ybiIsInRpbWVab25lIjoiVVRDIiwiY29sb3JJZCI6IjE2IiwiYmFja2dyb3VuZENvbG9yIjoiIzc2MjdiYiIsImZvcmVncm91bmRDb2xvciI6IiNmZmZmZmYiLCJzZWxlY3RlZCI6dHJ1ZSwiYWNjZXNzUm9sZSI6InJlYWRlciIsImRlZmF1bHRSZW1pbmRlcnMiOltdLCJjb25mZXJlbmNlUHJvcGVydGllcyI6eyJhbGxvd2VkQ29uZmVyZW5jZVNvbHV0aW9uVHlwZXMiOlsiaGFuZ291dHNNZWV0Il19fV0=
@@ -142,21 +153,12 @@ DialogWidth=800
 containmentType=Latte
 lengthPixels=12
 
-[Containments][1][Applets][98]
+[Containments][1][Applets][95]
 immutability=1
-plugin=menu11
+plugin=org.kde.plasma.win7showdesktop
 
-[Containments][1][Applets][98][Configuration]
-PreloadWeight=97
-
-[Containments][1][Applets][98][Configuration][ConfigDialog]
-DialogHeight=570
-DialogWidth=760
-
-[Containments][1][Applets][98][Configuration][General]
-favoritesPortedToKAstats=true
-menuPosition=1
-recentGridModel=1
+[Containments][1][Applets][95][Configuration]
+PreloadWeight=0
 
 [Containments][1][ConfigDialog]
 DialogHeight=949
@@ -174,7 +176,7 @@ advanced=false
 alignment=10
 alignmentUpgraded=true
 animationsEnabled=false
-appletOrder=98;59;58;54;4;60;61;50
+appletOrder=101;59;58;54;4;60;61;95
 appletShadowsEnabled=false
 autoSizeEnabled=false
 blurEnabled=false
@@ -187,10 +189,10 @@ infoBadgeProminentColorEnabled=true
 lockedZoomApplets=4
 panelPosition=10
 panelSize=100
-panelTransparency=80
+panelTransparency=74
 plasmaBackgroundForPopups=true
-shadowOpacity=45
-shadowSize=20
+shadowOpacity=20
+shadowSize=25
 shadowsUpgraded=true
 showGlow=false
 showOnlyCurrentDesktop=true
@@ -244,12 +246,12 @@ popupHeight=480
 popupWidth=480
 wallpaperplugin=org.kde.image
 
-[Containments][12][Applets][101]
+[Containments][12][Applets][102]
 immutability=1
-plugin=org.kde.plasma.mediacontroller
+plugin=org.kde.kscreen
 
-[Containments][12][Applets][101][Configuration]
-PreloadWeight=42
+[Containments][12][Applets][102][Configuration]
+PreloadWeight=34
 
 [Containments][12][Applets][40]
 immutability=1
@@ -357,10 +359,10 @@ PreloadWeight=0
 
 [Containments][12][General]
 blockedAutoColorItems=KIMToy_/IBus/Logo,org.kde.plasma.battery
-extraItems=org.kde.plasma.clipboard,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.volumewin7mixer,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.nightcolorcontrol
+extraItems=org.kde.plasma.clipboard,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.volumewin7mixer,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.nightcolorcontrol,org.kde.kscreen
 hiddenItems=KMix,Toolbox,KOrganizer Reminder Daemon,org.kde.ktp-contactlist,KIMToy,ulauncher,qBittorrent,Bitwarden1,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,Latte Dock_microphone,ryzen-controller,discord1,com.github.eneshecan.WhatsAppForLinux.Tray
 iconsSpacing=4
-knownItems=org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.volumewin7mixer,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.manage-inputmethod
+knownItems=org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.volumewin7mixer,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.manage-inputmethod,org.kde.kscreen
 shownItems=KIMToy_/IBus/Logo,org.kde.plasma.volumewin7mixer,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.notifications
 
 [Containments][5]
@@ -380,14 +382,14 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][5][Applets][10][Configuration]
-PreloadWeight=2
+PreloadWeight=5
 
-[Containments][5][Applets][100]
+[Containments][5][Applets][103]
 immutability=1
-plugin=org.kde.plasma.mediacontroller
+plugin=org.kde.kscreen
 
-[Containments][5][Applets][100][Configuration]
-PreloadWeight=42
+[Containments][5][Applets][103][Configuration]
+PreloadWeight=0
 
 [Containments][5][Applets][16]
 immutability=1
@@ -433,7 +435,7 @@ immutability=1
 plugin=org.kde.plasma.volumewin7mixer
 
 [Containments][5][Applets][48][Configuration]
-PreloadWeight=97
+PreloadWeight=59
 
 [Containments][5][Applets][48][Configuration][Applet]
 closeOnSetDefault=false
@@ -485,10 +487,10 @@ DialogWidth=1000
 
 [Containments][5][General]
 blockedAutoColorItems=KIMToy_/IBus/Logo,org.kde.plasma.battery
-extraItems=org.kde.plasma.clipboard,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.volumewin7mixer,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.nightcolorcontrol
-hiddenItems=KMix,Toolbox,KOrganizer Reminder Daemon,org.kde.ktp-contactlist,KIMToy,ulauncher,qBittorrent,Bitwarden1,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,Latte Dock_microphone,ryzen-controller,discord1,com.github.eneshecan.WhatsAppForLinux.Tray
+extraItems=org.kde.plasma.clipboard,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.volumewin7mixer,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.nightcolorcontrol,org.kde.kscreen
+hiddenItems=KMix,Toolbox,KOrganizer Reminder Daemon,org.kde.ktp-contactlist,KIMToy,ulauncher,qBittorrent,Bitwarden1,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,Latte Dock_microphone,ryzen-controller,discord1,com.github.eneshecan.WhatsAppForLinux.Tray,org.kde.kscreen
 iconsSpacing=4
-knownItems=org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.volumewin7mixer,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.manage-inputmethod
+knownItems=org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.mediacontroller,org.kde.plasma.volumewin7mixer,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.manage-inputmethod,org.kde.kscreen
 shownItems=KIMToy_/IBus/Logo,org.kde.plasma.volumewin7mixer,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.notifications
 
 [LayoutSettings]
