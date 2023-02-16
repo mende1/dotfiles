@@ -152,11 +152,19 @@ mkdir build && cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DKDE_INSTALL_LIBDIR=lib -DBUILD_TESTING=OFF -DKDE_INSTALL_USE_QT_SYS_PATHS=ON
 make
 sudo make install
+
+kwin_x11 --replace
 ```
 
 
 
 ## Global Theme, Icon theme, and more
+
+### Global Theme
+
+Just download the **Monterey dark theme** globally, but don't change it.
+
+
 
 ### Application Style
 
@@ -188,9 +196,14 @@ Choose **Rounded SBE**. Edit the theme:
 - Button padding to 5px
 - Horizontal offset to 1px
 - Mark the ***User System Foreground Colors*** option.
+- Mark off the Draw Separator between Title bar and Window
 - Gradient Intensity to 25%
 - Background Opacity to 92%
 - In "Window Corners" tab, raise the Corner radius to 12px.
+
+
+
+In "Title Buttons" Tab, leave just the minimize and close buttons.
 
 
 
@@ -231,4 +244,40 @@ Go to Startup and Shutdown > Login Screen (SDDM), and search for **Monterey** th
 
 ### Wallpaper
 
-Search for **Macos Monterey** and select it in Desktop Wallpaper and Screen Locking > Appearance.
+Search for **Macos Monterey**, also the Dark version, and select it in Desktop Wallpaper and Screen Locking > Appearance.
+
+
+
+## Latte Dock and Widgets
+
+ 
+
+Install the following widgets:
+
+- Win7 Volume Mixer
+- Win7 Show Desktop
+- Clear Clock by qewer
+- Kickoff/Grid
+- Latte Separator
+- Latte Spacer
+- Event Calendar
+- via **yay:**
+  - plasma5-applets-virtual-desktop-bar-git
+  - plasma5-wallpapers-wallpaper-engine-git
+
+
+
+Install Latte-dock:
+
+```bash
+yay -S latte-dock-git
+```
+
+
+
+After that, remove the default panel from KDE, and open the Latte Dock app.
+
+Right click in it, and click in Layouts > Edit Layouts, after that, click in Import, and select the layout downloaded from dotfiles repository.
+
+Switch for the new layout **kde-win11**. 
+
