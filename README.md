@@ -1,7 +1,6 @@
 # My Arch Linux + KDE Plasma Installation Step by Step
 
-
-
+![deskop2](https://user-images.githubusercontent.com/55323701/219661755-a180f117-8319-4b52-bb05-8c00572d8a35.png)
 
 
 ### General Settings
