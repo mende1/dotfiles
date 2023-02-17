@@ -6,11 +6,11 @@
 
 ### General Settings
 
-- [ ] Double Click to open files and folders (System Settings > Workspace Behavior > General Behavior > Selects them)
+- Double Click to open files and folders (System Settings > Workspace Behavior > General Behavior > Selects them)
 
-- [ ] In Workspace Behavior > Virtual Desktops, add more 3 rows of virtual desktop, resulting in 4.
+- In Workspace Behavior > Virtual Desktops, add more 3 rows of virtual desktop, resulting in 4.
 
-  
+
 
 ### Install Yay
 
@@ -193,8 +193,7 @@ Choose **Rounded SBE**. Edit the theme:
 
 - Button Style to ***SBE Sierra Inactive***
 - Button Spacing to 4px
-- Button padding to 5px
-- Horizontal offset to 1px
+- Button padding to 4px
 - Mark the ***User System Foreground Colors*** option.
 - Mark off the Draw Separator between Title bar and Window
 - Gradient Intensity to 25%
@@ -246,6 +245,14 @@ Go to Startup and Shutdown > Login Screen (SDDM), and search for **Monterey** th
 
 Search for **Macos Monterey**, also the Dark version, and select it in Desktop Wallpaper and Screen Locking > Appearance.
 
+But you also can use a plugin to have Dynamic Wallpapers, download the package:
+
+```bash
+yay -S plasma5-wallpapers-dynamic
+```
+
+This plugin accepts avif files as input. I leave this file from Monterey theme in this repo. After download the plugin, go to setup wallpapers in KDE, select the plugin, add wallpaper, and then select the monterey.avif file. This one is very simple, just two images, one for day and the other for night. But this plugin allows you to have many configurations, even one related to sun position in your current localization and time, visit their website to check more about it.
+
 
 
 ## Latte Dock and Widgets
@@ -263,7 +270,7 @@ Install the following widgets:
 - Event Calendar
 - via **yay:**
   - plasma5-applets-virtual-desktop-bar-git
-  - plasma5-wallpapers-wallpaper-engine-git
+  - plasma5-wallpapers-wallpaper-engine-git (Allows you to have the wallpapers from Wallpaper Engine from Steam in your KDE)
 
 
 
