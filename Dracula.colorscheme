@@ -1,20 +1,20 @@
 [Background]
-Color=33,34,44
+Color=48,48,48
 
 [BackgroundFaint]
-Color=33,34,44
+Color=48,48,48
 
 [BackgroundIntense]
-Color=98,114,164
+Color=48,48,48
 
 [Color0]
-Color=33,34,44
+Color=189,147,249
 
 [Color0Faint]
-Color=33,34,44
+Color=189,147,249
 
 [Color0Intense]
-Color=98,114,164
+Color=189,147,249
 
 [Color1]
 Color=255,85,85
@@ -23,7 +23,7 @@ Color=255,85,85
 Color=255,85,85
 
 [Color1Intense]
-Color=255,110,110
+Color=255,85,85
 
 [Color2]
 Color=80,250,123
@@ -32,52 +32,52 @@ Color=80,250,123
 Color=80,250,123
 
 [Color2Intense]
-Color=105,255,148
+Color=80,250,123
 
 [Color3]
-Color=241,250,140
+Color=255,121,198
 
 [Color3Faint]
-Color=241,250,140
+Color=255,121,198
 
 [Color3Intense]
-Color=255,255,165
+Color=255,121,198
 
 [Color4]
-Color=189,147,249
+Color=139,233,253
 
 [Color4Faint]
-Color=189,147,249
+Color=139,233,253
 
 [Color4Intense]
-Color=214,172,255
+Color=139,233,253
 
 [Color5]
-Color=255,121,198
+Color=241,250,140
 
 [Color5Faint]
-Color=255,121,198
+Color=241,250,140
 
 [Color5Intense]
-Color=255,146,223
+Color=241,250,140
 
 [Color6]
-Color=139,233,253
+Color=98,114,164
 
 [Color6Faint]
-Color=139,233,253
+Color=98,114,164
 
 [Color6Intense]
-Color=164,255,255
+Color=98,114,164
 
 [Color7]
-Color=248,248,242
+Color=68,71,90
 
 [Color7Faint]
-Color=248,248,242
+Color=68,71,90
 
 [Color7Intense]
-Color=255,255,255
+Color=68,71,90
 
 [Foreground]
 Color=248,248,242
@@ -86,11 +86,15 @@ Color=248,248,242
 Color=248,248,242
 
 [ForegroundIntense]
-Color=255,255,255
+Color=248,248,242
 
 [General]
-Blur=false
+Anchor=0.5,0.5
+Blur=true
 ColorRandomization=false
 Description=Dracula
-Opacity=1
+FillStyle=Tile
+Opacity=0.96
 Wallpaper=
+WallpaperFlipType=NoFlip
+WallpaperOpacity=1

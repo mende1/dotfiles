@@ -8,7 +8,7 @@
 
 - [ ] Double Click to open files and folders (System Settings > Workspace Behavior > General Behavior > Selects them)
 
-- [ ] 
+- [ ] In Workspace Behavior > Virtual Desktops, add more 3 rows of virtual desktop, resulting in 4.
 
   
 
@@ -279,5 +279,67 @@ After that, remove the default panel from KDE, and open the Latte Dock app.
 
 Right click in it, and click in Layouts > Edit Layouts, after that, click in Import, and select the layout downloaded from dotfiles repository.
 
-Switch for the new layout **kde-win11**. 
+Switch for the new layout **kde-win11**. (make sure you are running in Xorg11 instead Wayland, there is something in this layout that crashes the Latte).
 
+
+
+## Post install
+
+After that, feel free to install your personal applications, some of them to check it out:
+
+- Code Editor: VS Code and Neovim (I personally use the https://lunarvim.org/ IDE, config file is in this repo).
+- Typora
+- Chat apps: Discord, Slack, Telegram
+- Steam, RetroArch, Minecraft, etc.
+- Development apps related: Docker Desktop, Insomnia, Beekeper Studio, Figma, and so on
+- Video related: OBS Studio, DaVinci Resolve
+  - Set the incrontab -e to `/home/mendel/Videos     IN_CLOSE_WRITE  /usr/bin/ffmpeg -i $@/$# -c:v prores_ks -profile:v 3 -c:a pcm_s16be /home/mendel/DaVinci/$#.mov`, in order to auto convert mp4 recorded by OBS to be used in Resolve.
+-  Install a sync cloud storage, I personally like MEGA Sync.
+- Multimedia related: VLC, Spotify, Stremio.
+
+
+
+#### Setting up Developer Environment
+
+Here are some text to put in your zshrc related to programming stuff:
+
+```sh
+# ASDF installed with yay
+. /opt/asdf-vm/asdf.sh
+
+# pnpm
+export PNPM_HOME="/home/mendel/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
+# RUST / CARGO BIN
+export PATH="/home/mendel/.asdf/installs/rust/1.62.1/bin:$PATH"
+export PATH="/home/mendel/.local/bin:$PATH"
+
+# Aliases
+alias ls="exa --icons"
+alias cat="bat"
+alias update="yay -Syyuu --noconfirm"
+# Work stuff
+alias api="cd ~/SpotPass/api"
+alias docs="cd ~/SpotPass/docs"
+alias manager="cd ~/SpotPass/manager"
+```
+
+
+
+After install asdf with yay, install some programming languages:
+
+- Ruby
+- Nodejs (also yarn, pnpm)
+- Python
+- Rust
+  - Also, install some Rust utilities, like bat, exa...
+
+
+
+TO-DO:
+
+- [ ] Kvantum
+- [ ] Grub
+- [ ] Fonts
