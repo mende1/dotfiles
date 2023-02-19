@@ -4,6 +4,11 @@
 
 *I'll make a video about it soon.*
 
+## Arch Linux Installation
+
+---
+
+## Post Installation and KDE Plasma Customization
 
 ### General Settings
 
@@ -47,19 +52,19 @@ sudo cp -R * /usr/share/fonts
 
 ### Customizing Konsole KDE Terminal
 
-##### Install Zsh
+#### Install Zsh
 
 ```bash
 yay -S zsh
 ```
 
-##### Install Oh My Zsh
+#### Install Oh My Zsh
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-##### Install Dracula Theme for Konsole (https://draculatheme.com/konsole)
+#### Install Dracula Theme for Konsole (https://draculatheme.com/konsole)
 
  ```bash
  cp /tmp/dotfiles/Dracula.colorscheme ~/.local/share/konsole
@@ -71,7 +76,7 @@ Click in Edit Dracula theme, mark the Blur Background option, and set transparen
 
 
 
-### Install Spaceship
+#### Install Spaceship
 
 ```bash
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
@@ -101,7 +106,7 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 
 
 
-### Install Zinit to add plugins of Oh My Zsh
+#### Install Zinit to add plugins of Oh My Zsh
 
 Add this to the end of the file .zshrc
 
@@ -126,21 +131,23 @@ zi light zsh-users/zsh-completions
 
 
 
-### Configuring Konsole
+#### Configuring Konsole
 
 Go to Settings > Tooolbars Show, and mark off `Session Toolbar` and `Main Toolbar`, after that, press `Ctrl + Shift + m` to hide Menubar.
 
 
 
-### Install Lightly Application Style
+### Global Theme, Icon theme, and more
+
+Those two themes are very beautiful and customizable, they give us a very clean interface in our plasma desktop.
+
+#### Install Lightly Application Style
 
 ```bash
 yay -S lightly-git
 ```
 
-
-
-### Install RoundedSBE Window Decoration
+#### Install RoundedSBE Window Decoration
 
 ```bash
 # Dependencies
@@ -159,38 +166,38 @@ kwin_x11 --replace
 
 
 
-## Global Theme, Icon theme, and more
+Now, download and change the following themes:
 
-### Global Theme
+#### Global Theme
 
 Just download the **Monterey dark theme** globally, but don't change it.
 
 
 
-### Application Style
+#### Application Style
 
-Choose **Lightly**. And edit the Lightly theme:
+Choose **Lightly**. And edit the theme with the following options:
 
 - Mark the first 2 options in General, and change *Corner radius* to 8px.
 - In Transparency tab, change Menu level to 8, starting from 1, and Sidebars to 11, the maximum.
 
 
 
-### Plasma Style
+#### Plasma Style
 
-In Plasma Style, search for **WhiteSur Dark**. And switch the current theme to it.
-
-
-
-### Colors
-
-Seach for **Monterey color scheme**, and change to it. Also, mark **Use accent color from current color Scheme** option on top.
+In Plasma Style, search for **WhiteSur Dark** in *Get New Plasma Style*. And switch the current theme to it.
 
 
 
-### Window Decorations
+#### Colors
 
-Choose **Rounded SBE**. Edit the theme:
+Search for **Monterey color scheme**, and change to it. Also, mark **Use accent color from current color Scheme** option on top.
+
+
+
+#### Window Decorations
+
+Choose **Rounded SBE**. Edit the theme with the following options:
 
 - Button Style to ***SBE Sierra Inactive***
 - Button Spacing to 4px
@@ -201,19 +208,17 @@ Choose **Rounded SBE**. Edit the theme:
 - Background Opacity to 92%
 - In "Window Corners" tab, raise the Corner radius to 12px.
 
-
-
 In "Title Buttons" Tab, leave just the minimize and close buttons.
 
 
 
-### Fonts
+#### Fonts
 
 Change every font, except *Fixed with* to **SF Pro Display**
 
 
 
-### Icons Theme
+#### Icons Theme
 
 I like to switch between icon themes often. But the main Icon Themes which I like are:
 
@@ -223,30 +228,30 @@ I like to switch between icon themes often. But the main Icon Themes which I lik
 
 
 
-### Cursors
+#### Cursors
 
 - WhiteSur Cursors; or
 - Breeze original cursor theme from Plasma.
 
 
 
-### Splash Screen
+#### Splash Screen
 
 - Monterey-dark
 
 
 
-### Login Screen
+#### Login Screen
 
 Go to Startup and Shutdown > Login Screen (SDDM), and search for **Monterey** theme. Select it.
 
 
 
-### Wallpaper
+#### Wallpaper
 
 Search for **Macos Monterey**, also the Dark version, and select it in Desktop Wallpaper and Screen Locking > Appearance.
 
-But you also can use a plugin to have Dynamic Wallpapers, download the package:
+But you can also use a plugin to have Dynamic Wallpapers, download the package:
 
 ```bash
 yay -S plasma5-wallpapers-dynamic
@@ -257,8 +262,6 @@ This plugin accepts avif files as input. I leave this file from Monterey theme i
 
 
 ## Latte Dock and Widgets
-
- 
 
 Install the following widgets:
 
@@ -307,7 +310,7 @@ After that, feel free to install your personal applications, some of them to che
 
 
 
-#### Setting up Developer Environment
+### Setting up Developer Environment
 
 Here are some text to put in your zshrc related to programming stuff:
 
@@ -350,4 +353,3 @@ TO-DO:
 
 - [ ] Kvantum
 - [ ] Grub
-- [ ] Fonts
